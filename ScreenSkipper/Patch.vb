@@ -17,6 +17,8 @@ Public Class Patch
         Globals.Global.SkipIntro = True
     End Sub
 
+    <HarmonyPatch(GetType(ElevatorRide), NameOf(ElevatorRide.StartPreReleaseSequence))>
+    <HarmonyPostfix>
     Private Shared Sub ElevatorRide_StartPreReleaseSequence_Postfix()
         ElevatorRide.SkipPreReleaseSequence()
     End Sub
