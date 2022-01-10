@@ -11,7 +11,7 @@ Public Class BepinexLoader
     Public Const MODNAME = "ScreenSkipper"
     Public Const AUTHOR = "Dex & Fixed by Endskill"
     Public Const GUID = "com.Dex.ScreenSkipper"
-    Public Const VERSION = "1.1.0"
+    Public Const VERSION = "1.2.0"
 
     Public Shared Harmony As Harmony
 

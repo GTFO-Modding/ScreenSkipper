@@ -15,6 +15,7 @@ Public Class Patch
     Private Shared Sub Cm_PageIntro_Setup_Prefix()
         Globals.Global.ShowStartupScreen = False
         Globals.Global.SkipIntro = True
+        Globals.Global.FastElevator = True
     End Sub
 
     <HarmonyPatch(GetType(ElevatorRide), NameOf(ElevatorRide.StartPreReleaseSequence))>
